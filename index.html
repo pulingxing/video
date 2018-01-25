@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>陈柏霖的嘟嘟嘴</title>
+	<title></title>
 	<meta name="Keywords" content="">
 	<meta name="Description" content="">
 
@@ -17,30 +17,28 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/pxtorem.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-	<link rel="stylesheet" href="css/mediaelementplayer.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.min.css">
+	<link rel="stylesheet" type="text/css" href="css/pxtorem.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css">
+	<link rel="stylesheet" href="css/mediaelementplayer.min.css" />
 <style>
- 	html,body{
+html,body{
     height: 100%;
   }
- 	#wrap {
+  #wrap {
     height: 100%;
   }
-	.mejs-container,.video,.mejs-poster,.mejs-overlay,.mejs-mediaelement,video {height:100% !important;width:100% !important;}
+	.mejs-container,.video,.mejs-poster,.mejs-overlay,.mejs-mediaelement,video {height: 100% !important;width:16rem !important;}
 </style>
 </head>
 
 <body>
-
 <div id="wrap" class="bgColor">
   <div class="clr over video">
-  		<video src="duduzui.mp4" type="video/mp4" id="player1" poster="images/cbl.png" 
-	 preload="none"  autoplay="autoplay"></video>
+  		<video src="duduzui.mp4" type="video/mp4" id="player1"  
+	autoplay="autoplay" preload="none"></video>
   </div> 
 </div>
-
 
 <script src="js/jquery.min.js"></script>
 <script src="js/fastclick.js"></script>
@@ -48,7 +46,6 @@
 <script src="js/mediaelement-and-player.min.js"></script>
 <script type="text/javascript">
 $('audio,video').mediaelementplayer({
-	//mode: 'shim',
 	success: function(player, node) {
 		$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
 	}
