@@ -17,10 +17,10 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-	<link rel="stylesheet" type="text/css" href="css/reset.min.css">
-	<link rel="stylesheet" type="text/css" href="css/pxtorem.min.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css">
-	<link rel="stylesheet" href="css/mediaelementplayer.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/pxtorem.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+	<link rel="stylesheet" href="css/mediaelementplayer.css" />
 <style>
 html,body{
     height: 100%;
@@ -34,9 +34,13 @@ html,body{
 
 <body>
 <div id="wrap" class="bgColor">
-  <div class="clr over video">
-  		<video src="duduzui.mp4" type="video/mp4" id="player1"  
-	autoplay="autoplay" preload="none"></video>
+  <div class="clr over video" id="video1">
+  		<video src="1221.mp4" type="video/mp4" id="player1"  poster="images/12.jpg" 
+	controls="controls" preload="none"></video>
+  </div> 
+  <div class="clr over video" id="video2">
+  		<video src="1125.mp4" type="video/mp4" id="player1"  poster="images/12.jpg" 
+	controls="controls" preload="none"></video>
   </div> 
 </div>
 
@@ -55,6 +59,13 @@ $('#stopall').click(function() {
           $(this)[0].player.pause();		  
     });
 });
+$(function () {
+    if  (screen.height == 812) {
+        $("#video1").remove();//此分辨率下你需要的操作
+    } else {
+        $("#video2").remove();//默认操作
+    }
+});	
 </script>
 </body>
 </html>

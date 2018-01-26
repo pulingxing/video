@@ -98,7 +98,6 @@ img {width: 100%;}
 ul.mvlist {position: relative;}
 ul.mvlist li {display: block;box-shadow: 0 5px 5px rgba(0,0,0,.3);padding-top: .8rem;background: #fff;margin-bottom: .4rem;}
 ul.mvlist li video{display: block;height: 9rem;width: 16rem !important; width: 100%;background: #000}
-/*.video {height: 9rem;}*/
 .bg {background: #ddd}
 .talk {background: #fff;}
 .talk h1 {text-align: center;font-size: .6rem;font-weight: bold;line-height: 2rem;margin-bottom: .3rem;}
